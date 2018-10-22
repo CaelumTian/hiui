@@ -28,11 +28,11 @@
 由于当前智能小程序还不支持个人申请，为此没有线上项目来提供二维码。demo 截图如下：  
 
 
-![]("./doc/images/a1.png")  
-![]("./doc/images/a2.png")  
-![]("./doc/images/a3.png")  
-![]("./doc/images/a4.png")  
-![]("./doc/images/a5.png")
+<img src="./doc/images/a1.png" />  
+<img src="./doc/images/a2.png" />  
+<img src="./doc/images/a3.png" /> 
+<img src="./doc/images/a4.png" />
+<img src="./doc/images/a5.png" />
 
 
 ## 组件库开发初衷    
