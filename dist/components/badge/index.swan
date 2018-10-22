@@ -1,0 +1,3 @@
+<view class="u-badge {{ exClass ? exClass : ''}} u-badge-{{ type }} {{ mark ? 'u-badge-mark' : ''}} {{ plain ? 'u-badge-plain' : ''}}">
+    <slot></slot>
+</view>

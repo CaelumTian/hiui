@@ -1,0 +1,25 @@
+page {
+    padding: 10px 0px;
+}
+.title {
+    padding-left: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.group {
+    margin: 10px 0px 10px 0px;
+}
+.flex-mid {
+    display: flex;
+    justify-content: space-between;
+}
+.group-list button {
+    margin-bottom: 10px;
+}
+/* 自定义样式必须这么写 */
+.hi-cell__exbg {
+    background-color: #f96e75 !important;
+}
+.hi-cell__white {
+    color: #fff;
+}

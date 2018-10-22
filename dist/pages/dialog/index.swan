@@ -1,0 +1,32 @@
+<view class="container">
+    <hi-button ex-class="margintop" bind:btnClick="handleClick1">普通对话框</hi-button>
+    <hi-button ex-class="margintop" bind:btnClick="handleClick2">自定义按钮对话框</hi-button>
+    <hi-button ex-class="margintop" bind:btnClick="handleClick3">纵向自定义按钮对话框</hi-button>
+    <hi-button ex-class="margintop" bind:btnClick="handleClick4">带loading对话框</hi-button>
+    <hi-dialog 
+        bind:cancel="handleCancel1" 
+        bind:ok="handleOk1"
+        show="{{ show1 }}" 
+        title="普通对话框">
+        我是对话框正文呦
+    </hi-dialog>
+    <hi-dialog 
+    	actions="{{ actions1 }}"
+        bind:cancel="handleCancel2"
+        bind:ok="handleOk2"
+        show="{{ show2 }}"
+        title="支付"
+        bind:itemClick="itemClick1">请选择支付方式</hi-dialog>
+    <hi-dialog 
+    	actions="{{ actions2 }}"
+        show="{{ show3 }}"
+        title="纵向选择"
+        mode="vertical"
+        bind:itemClick="itemClick2" />
+    <hi-dialog 
+    	actions="{{ actions3 }}"
+        show="{{ show4 }}"
+        title="是否删除"
+        bind:itemClick="itemClick3" />
+    <hi-notify id="message"/>
+</view>

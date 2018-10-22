@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "hi-notify": "/components/notify/index",
+        "hi-button": "/components/button/index"
+    }
+}

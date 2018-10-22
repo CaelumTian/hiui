@@ -1,0 +1,28 @@
+<view class="u-swipeout-wrap">
+    <view 
+        class="u-swipeout-item {{ exClass ? exClass : ''}}" 
+        bind:touchstart="handleTouchStart" 
+        bind:touchmove="handleTouchMove"
+        bind:touchend="handleTouchEnd"
+        style="transform: translate3d({{ position.pageX }}px, 0, 0);">
+        <view class="u-swipeout-content">
+            <slot name="content"></slot>
+        </view>
+        <view s-if="{{ actions.length > 0}}" class="u-swipeout-button-group">
+            <view 
+                class="u-swipeout-button-item {{ exItemClass ? exItemClass : ''}}"
+                s-for="{{ actions }}"
+                data-index="{{ index }}"
+                style="width: {{ item.width }}px;{{ item.fontSize ? 'font-size: ' + item.fontSize : ''}}; {{ item.background ? 'background: ' + item.background : 'background: #fcfcfc'}}; {{ item.color ? 'color: ' + item.color : ''}};"
+                catch:tap="handleItemClick">
+                <hi-icon 
+                    s:if="{{ item.icon }}" 
+                    type="{{ item.icon }}" 
+                    size="{{ item.fontSize }}"
+                    color="{{ item.color }}"
+                    class="u-swipeout-icon"></hi-icon>
+                {{ item.name }}
+            </view>
+        </view>
+    </view>
+</view>

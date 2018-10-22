@@ -1,0 +1,17 @@
+<view 
+    class="u-cell {{ exClass ? exClass : ''}} {{ link ? 'u-cell-link' : '' }} {{ lastcell ? 'u-cell-last' : ''}}"
+    bind:tap="handleTap">
+    <view class="u-cell-icon">
+        <slot></slot>
+    </view>
+    <view class="u-cell-title">
+        <view s-if="{{ title }}" class="u-cell-text {{ exTitleClass ? exTitleClass : '' }}">{{ title }}</view>
+        <view s-if="{{ label }}" class="u-cell-label {{ exLabelClass ? exLabelClass : '' }}">{{ label }}</view>
+    </view>
+    <view catch:tap="handleNavigateTo" class="u-cell-nav {{ exRightClass ? exRightClass : '' }}">
+        <block s-if="{{ value }}">{{ value }}</block>
+        <block s-else>
+            <slot name="right"></slot>
+        </block>
+    </view>    
+</view>

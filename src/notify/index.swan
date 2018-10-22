@@ -1,0 +1,4 @@
+<view 
+    class="u-message u-message-{{ type }} {{ exClass ? exClass : ''}} {{ show ? 'u-message-show' : ''}}">
+    {{ content }}
+</view>

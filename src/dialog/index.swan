@@ -1,0 +1,24 @@
+<hi-animate class="u-dialog-wrap" show="{{ show }}">
+    <view class="f-toast-mask {{ plain ? 'u-toast-mask-plain' : '' }}" s-if="{{ true }}"></view>
+    <view class="u-dialog">
+        <view class="u-dialog-content">
+            <view class="u-dialog-title" s-if="{{ title }}">{{ title }}</view>
+            <view class="u-dialog-body">
+                <slot></slot>
+            </view>
+            <view class="u-dialog-actions {{ mode === 'vertical' ? 'u-dialog-action-vertical' : ''}}" s-if="{{ actions.length > 0 }}">
+                <block s-for="{{ actions }}">
+                    <view class="u-dialog-item" data-index="{{ index }}" bind:tap="handleClickItem">
+                        <view class="u-loading-inner" s-if="{{ item.loading }}"></view>
+                        <hi-icon size="13px" type="{{ item.icon }}" s-if="{{ item.icon }}"></hi-icon>
+                        <text style="{{ item.color ? 'color: ' + item.color : '' }}">{{ item.name }}</text>
+                    </view>
+                </block>
+            </view>
+            <view class="u-dialog-actions" s-else>
+                <view s-if="{{ showOk }}" class="u-dialog-item" bind:tap="handleClickCancel">{{ cancelText }}</view>
+                <view s-if="{{ showCancel }}" class="u-dialog-item u-dialog-ok" bind:tap="handleClickOk">{{ okText }}</view>
+            </view>
+        </view>
+    </view>
+</hi-animate>

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "hi-divider": "/components/divider/index"
+    }
+}

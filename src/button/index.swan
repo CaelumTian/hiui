@@ -1,0 +1,13 @@
+<button
+    class="u-button {{ exClass ? exClass : ''}} {{ inline ? 'u-button-inline' : '' }} {{ disabled ? 'u-button-disabled' : ''}} {{ loading ? 'u-button-loading' : '' }} {{ 'u-button-' + size }} {{ 'u-button-' + type }} {{'u-button-' + shape}}"
+    hover-class="none"
+    bind:tap="handleTap"
+    bindgetuserinfo="handleGetuserinfo"
+    bindgetphonenumber="handleGetphonenumber"
+    open-type="{{ openType }}"
+    hover-start-time="{{ hoverStartTime }}"
+    hover-stay-time="{{ hoverStayTime }}"
+    data-index="1">
+    <view class="u-loading-inner" s-if="{{ loading }}"></view>
+    <slot></slot>
+</button>

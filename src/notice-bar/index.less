@@ -1,0 +1,47 @@
+@import "../common/styles/mixin.less";
+.u-noticebar {
+    display: flex;
+    height: 72rpx;
+    line-height: 72rpx;
+    font-size: 14px;
+    color: @f-notice-color;
+    background-color: @bg-notice-color;
+    overflow: hidden
+}
+.u-noticebar-icon {
+    margin-left: 20rpx;
+    align-items: center;
+    vertical-align: middle;
+}
+.u-noticebar-icon~.u-noticebar-wrap {
+    margin: 0 15rpx;
+}
+.u-noticebar-wrap {
+    position: relative;
+    flex: 1;
+    margin: 0 30rpx;
+    overflow: hidden;
+}
+.u-noticebar-content {
+    position: absolute;
+    transition-duration: 20s; 
+    white-space: nowrap;
+}
+.u-noticebar-fix .u-noticebar-content {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.u-noticebar-right {
+    padding-right: 20rpx;
+    align-items: center;
+    vertical-align: middle;
+}
+.f-no-margin {
+    margin-right: 15rpx !important;
+}
+
+.u-noticebar-link {
+    line-height: 70rpx;;
+}

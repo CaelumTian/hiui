@@ -1,0 +1,51 @@
+@import "../common/styles/mixin.less";
+.u-switch {
+    position: relative;
+    width: 1.6em;
+    height: 1em;
+    display: inline-block;
+    background: #fff;
+    box-sizing: content-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 1em;
+}
+.u-switch-node {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 1em;
+    height: 1em;
+    transition: .3s;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, .05),
+         0 2px 2px 0 rgba(0, 0, 0, .1), 
+         0 3px 3px 0 rgba(0, 0, 0, .05);
+}
+.u-switch-on {
+    background-color: @b-primary-color; 
+}
+.u-switch-on .u-switch-node {
+    -webkit-transform:translateX(.6em);
+            transform:translateX(.6em)
+}
+.u-switch-disabled {
+    opacity: .4 !important;
+}
+.u-loading-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .f-loading(0.5em, #cbcbcb);
+    
+}
+@keyframes btn-spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

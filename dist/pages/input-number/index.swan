@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="des">
+        注意：目前百度开发者工具模拟器存在问题，当输入框值为0的时候，不能显示内容。真机环境表现正常。
+    </view>
+    <view class="item">
+        <view class="title">
+            基础用法
+        </view>
+        <hi-input-number value="{{ 10 }}"/>
+    </view>
+    <view class="item">
+        <view class="title">
+            禁用状态
+        </view>
+        <hi-input-number value="{{ 10 }}" disabled/>
+    </view>
+    <view class="item">
+        <view class="title">
+            只能输入整数，每次+2
+        </view>
+        <hi-input-number value="{{ 24 }}" step="2" integer/>
+    </view>
+</view>

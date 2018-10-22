@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "hi-tabs": "/components/tabs/index",
+        "hi-tab": "/components/tab/index"
+    }
+}

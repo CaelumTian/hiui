@@ -1,0 +1,46 @@
+<view>
+    <view class="item">
+        <view class="title">普通按钮</view>
+        <view class="group flex-mid">
+            <hi-switch 
+                checked="{{ checked }}" 
+                bindchange="handleChange"
+                size="35px"></hi-switch>
+            <hi-switch 
+                checked="{{ checked }}" 
+                bindchange="handleChange"></hi-switch>
+            <hi-switch
+                checked="{{ checked }}"
+                size="25px"
+                bindchange="handleChange"></hi-switch>
+            <hi-switch
+                checked="{{ checked }}"
+                size="20px"
+                bindchange="handleChange"></hi-switch>
+        </view>
+    </view>
+    <view>
+        <view class="item">
+            <view class="title">禁用按钮</view>
+            <view class="group">
+                <hi-switch checked="true" disabled></hi-switch>
+            </view>
+        </view>
+    </view>
+    <view>
+        <view class="item">
+            <view class="title">加载状态</view>
+            <view class="group">
+                <hi-switch checked="true" loading></hi-switch>
+            </view>
+        </view>
+    </view>
+    <view>
+        <view class="item">
+            <view class="title">自定义样式</view>
+            <view class="group">
+                <hi-switch checked="true" ex-class="exbg"></hi-switch>
+            </view>
+        </view>
+    </view>
+</view>

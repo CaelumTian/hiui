@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="item">
+        <view class="title">普通侧边栏打开</view>
+        <hi-button bind:btnClick="handleClick1">打开侧边栏</hi-button>
+    </view>
+    <view class="item">
+        <view class="title">右边方向打开</view>
+        <hi-button bind:btnClick="handleClick2">打开侧边栏</hi-button>
+    </view>
+    <hi-drawer show="{{ show1 }}" bind:close="handleClose1">
+        <view class="content1">
+            <view class="head">
+                这是标题
+            </view>
+            <hi-button bind:btnClick="handleClose1" type="warning">关闭</hi-button>
+        </view>
+    </hi-drawer>
+
+    <hi-drawer show="{{ show2 }}" bind:close="handleClose2" direction="right">
+        <view class="content1">
+            <view class="head">
+                这是标题
+            </view>
+            <hi-button bind:btnClick="handleClose2" type="warning">关闭</hi-button>
+        </view>
+    </hi-drawer>
+</view>

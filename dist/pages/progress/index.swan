@@ -1,0 +1,12 @@
+<view class="container">
+    <hi-progress percent="25" />
+    <hi-progress percent="45" type="warning" />
+    <hi-progress percent="70" type="success" />
+    <hi-progress percent="95" type="primary" active/>
+    
+    <view style="margin-top: 15px;margin-bottom: 10px;">
+        <hi-progress percent="{{ per }}" />
+    </view>
+    <hi-button ex-class="hi-button__marginbottom" bind:btnClick="handlePlus">增加</hi-button>
+    <hi-button bind:btnClick="handleDes">减少</hi-button>
+</view>

@@ -1,0 +1,20 @@
+<hi-animate class="u-toast-wrap" show="{{ show }}" bind:close="handleToastEnd">
+    <view class="f-toast-mask {{ plain ? 'u-toast-mask-plain' : '' }}" s-if="{{ mask }}"></view>
+    <view class="u-toast {{ exClass ? exClass : ''}}">
+        <block s-if="{{ type !== 'default'}}">
+            <view class="u-toast-type">
+                <hi-icon size="38px" color="#fff" type="roundcheck" s-if="{{ type === 'success'}}"></hi-icon>
+                <hi-icon size="38px" color="#fff" type="info" s-if="{{ type === 'warning'}}"></hi-icon>
+                <hi-icon size="38px" color="#fff" type="roundclose" s-if="{{ type === 'error'}}"></hi-icon>
+                <view class="u-loading-inner" s-if="{{ type === 'loading' }}"></view>
+            </view>
+        </block>
+        <block s-else>
+            <view class="u-toast-type" s-if="{{ icon || image }}">
+                <hi-icon size="38px" color="#fff" type="{{ icon }}" s-if="{{ icon }}"></hi-icon>
+                <image class="u-toast-image" src="{{ image }}" s-if="{{ image }}" mode="aspectFit"/>
+            </view>
+        </block>
+        <view class="u-toast-content" s-if="{{ content }}">{{ content }}</view>
+    </view>
+</hi-animate>

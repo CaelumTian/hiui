@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "hi-toast": "/components/toast/index",
+        "hi-button": "/components/button/index"
+    }
+}

@@ -1,0 +1,15 @@
+.content1 {
+    height: 100%;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+.content1 .head {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.title {
+    padding: 10px;
+    font-size: 13px;
+    color: #666;
+}

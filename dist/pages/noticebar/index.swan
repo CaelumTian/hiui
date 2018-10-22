@@ -1,0 +1,45 @@
+<view>
+    <view class="item">
+        <view class="title">通告栏</view>
+        <view class="group">
+            <hi-notice-bar>
+                根据相关法律法规，你需要进行身份信息完善，才能继续使用百度 HI 红包功能
+            </hi-notice-bar>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">自定义通告栏</view>
+        <view class="group">
+            <hi-notice-bar color="#fff" backgroundColor="#67c26c">
+                根据相关法律法规，你需要进行身份信息完善，才能继续使用百度 HI 红包功能
+            </hi-notice-bar>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">带图标通告栏</view>
+        <view class="group">
+            <hi-notice-bar icon="notification">
+                根据相关法律法规，你需要进行身份信息完善，才能继续使用百度 HI 红包功能
+            </hi-notice-bar>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">功能类通告栏</view>
+        <hi-notice-bar mode="closeable">
+            这是一个可关闭的通告栏
+        </hi-notice-bar>
+    </view>
+    <view class="item">
+        <hi-notice-bar mode="link" url="/pages/index/index">
+            这是一个带有导航功能的通告栏
+        </hi-notice-bar>
+    </view>
+    <view class="item">
+        <view class="title">滚动通告栏</view>
+        <view class="group">
+            <hi-notice-bar loop>
+                根据相关法律法规，你需要进行身份信息完善，才能继续使用百度 HI 红包功能
+            </hi-notice-bar>
+        </view>
+    </view>
+</view>

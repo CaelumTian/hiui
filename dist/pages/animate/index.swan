@@ -1,0 +1,14 @@
+<view>
+    <view class="title">
+        基础用法
+    </view>
+    <hi-cell-group border>
+        <hi-cell title="Fade" bind:cellClick="handleFade"></hi-cell>
+        <hi-cell title="Fade Up" bind:cellClick="handleFadeUp"></hi-cell>
+        <hi-cell title="Fade Down" bind:cellClick="handleFadeDown"></hi-cell>
+        <hi-cell title="Fade Left" bind:cellClick="handleFadeLeft"></hi-cell>
+        <hi-cell title="Fade Right" bind:cellClick="handleFadeRight"></hi-cell>
+        <hi-cell title="Bounce" bind:cellClick="handleBounce"></hi-cell>
+    </hi-cell-group>
+    <hi-animate show="{{ show }}" name="{{ name }}" ex-class="block" />
+</view>

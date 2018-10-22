@@ -1,0 +1,14 @@
+.title {
+    margin: 10px;
+    font-size: 13px;
+    color: #666
+}
+.hi-animate__block {
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    margin: -50px 0 0 -50px;
+    background-color: #549ef4;
+}

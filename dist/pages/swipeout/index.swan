@@ -1,0 +1,61 @@
+<view>
+    <view class="item">
+        <view class="title">
+            普通用法
+        </view>
+        <view class="des">
+            注意：由于智能小程序节点计算回调Bug(具体参见问题记录)，目前必须给每个按钮传入确定的宽度。会及时跟进
+            修复进度，修改本规则。
+        </view>
+        <hi-swipeout actions="{{ actions4 }}" bind:btnClick="btnClick4" toggle="{{ toggle4 }}">
+            <view slot="content">
+                <view class="action1-title">基本用法</view>
+                <view class="action1-content">
+                    点击按钮可通过修改 toggle 属性关闭
+                </view>
+            </view>
+        </hi-swipeout>
+        <hi-swipeout ex-item-class="exitem" actions="{{ actions2 }}">
+            <view slot="content">
+                <view class="action1-title">修改按钮样式</view>
+                <view class="action1-content">
+                    点击按钮并不会主动关闭滑动组件，加入自定义按钮样式
+                </view>
+            </view>
+        </hi-swipeout>
+    </view>
+    <view class="item">
+        <view class="title">与其他组件联合使用</view>
+        <hi-swipeout actions="{{ actions1 }}" bind:btnClick="btnClick1" toggle="{{ toggle1 }}">
+            <view slot="content">
+                <view class="action1-title">HiUI 开发测试</view>
+                <view class="action1-content">
+                    旨在帮助开发者快速完成移动端页面的开发，并提供给用户在百度 Hi 内一致性的用户体验。
+                </view>
+            </view>
+        </hi-swipeout>
+        <hi-swipeout ex-item-class="exitem" toggle="{{ toggle2 }}" actions="{{ actions3 }}" bind:btnClick="btnClick2">
+            <view slot="content" class="sp">
+                <view class="head">
+                    <image src="../../images/avator.jpg"/>
+                </view>
+                <view class="body">
+                    <view class="sp-title">
+                        <view class="name">CaelumTian</view>
+                        <view class="time">10:23</view>
+                    </view>
+                    <view class="sp-content">
+                        <view class="title">HiUI测试邮件，请勿回复</view>
+                        <view class="content">点击按钮并不会主动关闭滑动组件，加入自定义按钮样式</view>
+                    </view>
+                </view>
+            </view>
+        </hi-swipeout>
+    </view>
+    <hi-notify id="message"/>
+    <hi-action-sheet 
+        actions="{{ sactions }}" 
+        show="{{ show }}"
+        bind:cancel="handleCancel"
+        bind:itemClick="handleItemClick"></hi-action-sheet>
+</view>

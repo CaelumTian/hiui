@@ -1,0 +1,22 @@
+<view class="container">
+    <hi-button bind:btnClick="handleClick">普通弹出</hi-button>
+    <hi-button ex-class="margintop" bind:btnClick="handleClick2">异步, 带有提示的</hi-button>
+    <hi-action-sheet 
+        actions="{{ actions }}" 
+        show="{{ show }}"
+        bind:cancel="handleCancel"
+        bind:itemClick="handleItemClick"
+        show-cancal="{{ false }}"></hi-action-sheet>
+    <hi-action-sheet 
+        actions="{{ actions2 }}" 
+        show="{{ show2 }}"
+        mask-close-able="{{ false }}"
+        bind:cancel="handleCancel2"
+        bind:itemClick="handleItemClick2">
+        <view slot="header" class="action-header">
+            <view class="action-header-title">确定退出么？</view>
+            <text>退出后将不再接受通知</text>
+        </view>
+    </hi-action-sheet>
+    <hi-notify id="message"/>
+</view>

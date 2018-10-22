@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "hi-swipeout": "/components/swipeout/index",
+        "hi-notify": "/components/notify/index",
+        "hi-action-sheet": "/components/action-sheet/index"
+    }
+}

@@ -1,0 +1,4 @@
+<view 
+    class="u-icon u-icon-{{ type }} {{ exClass ? exClass : ''}}" 
+    style="font-size: {{ size }}; color: {{ color }}">   
+</view>

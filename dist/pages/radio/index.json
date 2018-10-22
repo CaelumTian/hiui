@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hi-radio-group": "/components/radio-group/index",
+    "hi-radio": "/components/radio/index"
+  }  
+}

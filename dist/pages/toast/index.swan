@@ -1,0 +1,13 @@
+<view>
+    <view class="item">
+        <hi-button bind:btnClick="handleText">仅有文本提示</hi-button>
+        <hi-button bind:btnClick="handleSuccess">成功提示</hi-button>
+        <hi-button bind:btnClick="handleWarning">警告提示</hi-button>
+        <hi-button bind:btnClick="handleError">错误提示</hi-button>
+        <hi-button bind:btnClick="handleLoad">加载提示</hi-button>
+        <hi-button bind:btnClick="handleIcon">自定义图标</hi-button>
+        <hi-button bind:btnClick="handleImage">自定义图片</hi-button>
+        <hi-button bind:btnClick="handleMask">带遮罩层</hi-button>
+    </view>
+    <hi-toast id="toast"/>
+</view>

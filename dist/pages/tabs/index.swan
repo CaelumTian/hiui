@@ -1,0 +1,5 @@
+<view>
+    <hi-tabs class="a">
+        <hi-tab title="标签1" id="a">内容1</hi-tab>
+    </hi-tabs>
+</view>

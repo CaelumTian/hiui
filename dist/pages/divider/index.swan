@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="item">
+        <view class="title">
+            基本用法
+        </view>
+        <hi-divider ex-class="margin" content="加载完成，已经没有内容了"/>
+        <hi-divider ex-class="margin" size="13px" content="加载完成，已经没有内容了" color="#f96e75" line-color="#f96e75"/>
+        <hi-divider ex-class="margin" size="14px" content="加载完成，已经没有内容了" line-color="#549ef4"/>
+        <hi-divider ex-class="margin" size="15px" content="加载完成，已经没有内容了" color="#549ef4" line-color="#67c26c"/>
+    </view>
+    <view class="item">
+        <view class="title">
+            自定义内容
+        </view>
+        <hi-divider>
+            <view>
+                <view class="f-loading-inner"></view>
+                内容正在加载中，请稍后
+            </view>
+        </hi-divider>
+    </view>
+</view>

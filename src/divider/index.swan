@@ -1,0 +1,9 @@
+<view class="u-divider {{ exClass ? exClass : ''}}" style="font-size: {{ size }}; color: {{ color }}; height: {{ height }};">
+    <view class="u-divider-content" s-if="{{ content.length > 0 }}">
+        {{ content }}
+    </view>
+    <view class="u-divider-content" s-else>
+        <slot></slot>
+    </view>
+    <view class="u-divider-line" style="background: {{ lineColor }};"></view>
+</view>

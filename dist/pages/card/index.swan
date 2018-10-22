@@ -1,0 +1,49 @@
+<view class="container">
+    <view class="item">
+        <view class="title">默认卡片</view>
+        <view class="group">
+            <hi-card title="卡片标题" extra="额外信息" thumb="/images/avator.jpg">
+                <view slot="content">这里是正文内容</view>
+                <view slot="footer">这是尾部内容</view>
+            </hi-card>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">默认卡片</view>
+        <view class="group">
+            <hi-card full title="卡片标题" extra="额外信息" thumb="/images/avator.jpg">
+                <view slot="content">这里是正文内容</view>
+                <view slot="footer">这是尾部内容</view>
+            </hi-card>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">自定义卡片</view>
+        <view class="group">
+            <hi-card 
+                title="卡片标题" 
+                extra="额外信息" 
+                thumb="/images/avator.jpg"
+                ex-thumb-class="circle"
+                ex-title-class="card-title">
+                <view slot="content">这里是正文内容</view>
+                <view slot="footer">这是尾部内容</view>
+            </hi-card>
+        </view>
+    </view>
+    <view class="item">
+        <hi-card  
+            thumb="/images/cardbg.jpg"
+            ex-thumb-class="card-note"
+            ex-title-class="card-title"
+            ex-header-class="note-header"
+            ex-class="sp-card">
+            <view slot="content">
+                <text class="des">Dart是谷歌开发的计算机编程语言，后来被Ecma (ECMA-408)认定为标准。它被用于web、服务器、移动应用和物联网等领域的开发。它是宽松开源许可证（修改的BSD证书）下的开源软件。Dart是面向对象的、类定义的、单继承的语言。</text>
+            </view>
+            <view slot="footer" class="footer">
+                <hi-badge type="primary" plain>查看收藏</hi-badge>
+            </view>
+        </hi-card>
+    </view>
+</view>

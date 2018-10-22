@@ -1,0 +1,71 @@
+.item {
+    padding: 10px 0px;
+}
+.title {
+    padding: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.action1-title {
+    font-size: 14px;
+    color: #2b3138;
+    margin-bottom: 5px; 
+}
+.action1-content {
+    font-size: 12px;
+    color: #aaaeb2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.hi-swipeout__exitem {
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+.sp {
+    display: flex;
+    align-items: center;
+}
+.head {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.head image {
+    width: 100%;
+    height: 100%;
+}
+.body {
+    flex: 1;
+    overflow: hidden;
+}
+.sp-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #2b3138;
+}
+.time {
+    font-size: 11px;
+    color: #aaaeb2;
+}
+.sp-content {
+    font-size: 13px;
+    color: #2b3138;
+}
+.sp-content .title {
+    padding: 0px;
+}
+.sp-content .content {
+    font-size: 12px;
+    color: #aaaeb2;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.des {
+    padding: 0px 0px 10px 10px;
+    font-size: 12px;
+    color: #f96e75;
+}

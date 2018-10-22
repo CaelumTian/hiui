@@ -1,0 +1,8 @@
+<view
+    class="u-switch {{ exClass ? exClass : ''}} {{ checked ? 'u-switch-on' : '' }} {{ disabled ? 'u-switch-disabled' : ''}}"
+    style="font-size: {{ size }}"
+    bind:tap="handleTap">
+    <view class="u-switch-node {{ exNodeClass ? exNodeClass : ''}}">
+        <view class="u-loading-inner" s-if="{{ loading }}"></view>
+    </view>
+</view>

@@ -1,0 +1,76 @@
+@import "../common/styles/mixin.less";
+@import "../common/styles/loading.less";
+.f-toast-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: @bg-mask-color;
+}
+.f-toast-mask-plain {
+    background-color: transparent !important;
+}
+.u-dialog {
+    width: 270px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1100;
+}
+.u-dialog-content {
+    position: relative;
+    height: 100%;
+    padding-top: 15px;
+    background-color: #fff;
+    color: @f-title-color;
+    border: 0;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden
+}
+.u-dialog-body {
+    max-height: 100px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: @f-normal-color;
+    height: 100%;
+    line-height: 1.5;
+    overflow: auto
+}
+.u-dialog-title {
+    padding: 4px 15px 15px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center
+}
+.u-dialog-actions {
+    display: flex;
+}
+.u-dialog-item {
+    flex: 1;
+    border: 1px solid #e9eaec;
+    border-right: none;
+    border-bottom: none;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+    color: #344041;
+}
+.u-dialog-action-vertical {
+    flex-direction: column;
+}
+.u-dialog-item:active {
+    background-color: #e8e8e8;
+}
+.u-dialog-ok {
+    color: @f-link-color;
+}
+
+.u-loading-inner {
+    margin-right: 6px;
+    .f-loading(10px, #344041);
+}

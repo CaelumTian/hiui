@@ -1,0 +1,9 @@
+.item hi-button button {
+    margin: 10px;
+}
+page {
+    padding-top: 100px;
+}
+.hi-notify__custom-message {
+    background-color: coral !important;
+}

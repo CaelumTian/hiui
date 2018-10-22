@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "hi-col": "/components/col/index",
+      "hi-row": "/components/row/index"
+  }  
+}

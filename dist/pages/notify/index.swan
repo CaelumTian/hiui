@@ -1,0 +1,10 @@
+<view>
+    <view class="item">
+        <hi-button bind:btnClick="handlePrimary" type="primary">默认提示</hi-button>
+        <hi-button bind:btnClick="handleWarning" type="warning">警告提示</hi-button>
+        <hi-button bind:btnClick="handleCustom">自定义样式提示</hi-button>
+        <hi-button bind:btnClick="handleCustomTime">自定义提示时间</hi-button>
+        <hi-button bind:btnClick="handleSuccess" type="success">成功提示</hi-button>
+    </view>
+    <hi-notify id="message"/>
+</view>

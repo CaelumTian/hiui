@@ -1,0 +1,51 @@
+<view class="container">
+    <view class="head">
+        HiUI Duapp
+    </view>
+    <view class="item">
+        <view class="title">
+            布局&设计
+        </view>
+        <hi-cell-group border>
+            <hi-cell title="Layout 栅格布局" link url="/pages/layout/index"></hi-cell>
+            <hi-cell title="Card 卡片" link url="/pages/card/index"></hi-cell>
+            <hi-cell title="Color 颜色" link url="/pages/color/index"></hi-cell>
+        </hi-cell-group>
+    </view>
+    <view class="item">
+        <view class="title">
+            基础组件
+        </view>
+        <hi-cell-group border>
+            <hi-cell title="Button 按钮" link url="/pages/button/index"></hi-cell>
+            <hi-cell title="Badge 徽章" link url="/pages/badge/index"></hi-cell>
+            <hi-cell title="Cell 单元格" link url="/pages/cell/index"></hi-cell>
+            <hi-cell title="Icon 图标" link url="/pages/icon/index"></hi-cell>
+            <hi-cell title="NoticeBar 通告栏" link url="/pages/noticebar/index"></hi-cell>
+            <hi-cell title="Drawer 抽屉菜单" link url="/pages/drawer/index"></hi-cell>
+            <hi-cell title="Swipeout 滑动菜单" link url="/pages/swipeout/index"></hi-cell>
+            <hi-cell title="Progress 进度条" link url="/pages/progress/index"></hi-cell>
+            <hi-cell title="Animate 动画组件" link url="/pages/animate/index"></hi-cell>
+        </hi-cell-group>
+    </view>
+    <view class="item">
+        <view class="title">
+            操作反馈
+        </view>
+        <hi-cell-group border>
+            <hi-cell title="ActionSheet 动作面板" link url="/pages/action-sheet/index"></hi-cell>
+            <hi-cell title="Dialog 弹出框" link url="/pages/dialog/index"></hi-cell>
+            <hi-cell title="Notify 消息通知" link url="/pages/notify/index"></hi-cell>
+            <hi-cell title="Toast 提示" link url="/pages/toast/index"></hi-cell>
+        </hi-cell-group>
+    </view>
+    <view class="item">
+        <view class="title">
+            表单组件
+        </view>
+        <hi-cell-group border>
+            <hi-cell title="Switch 开关" link url="/pages/switch/index"></hi-cell>
+            <hi-cell title="InputNumber 数字输入" link url="/pages/input-number/index"></hi-cell>
+        </hi-cell-group>
+    </view>
+</view>

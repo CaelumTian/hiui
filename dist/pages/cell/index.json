@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "hi-cell": "/components/cell/index",
+    "hi-cell-group": "/components/cell-group/index",
+    "hi-switch": "/components/switch/index",
+    "hi-icon": "/components/icon/index"
+  }  
+}

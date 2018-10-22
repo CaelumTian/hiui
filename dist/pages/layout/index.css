@@ -1,0 +1,25 @@
+page {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.title {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.des {
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.hi-row__wrap {
+    margin-bottom: 10px;
+}
+.hi-col__bg {
+    background-color: #549ef4;
+    height: 35px;
+}
+hi-col:nth-of-type(2n) .hi-col__bg {
+    background-color: #00bcd4;
+}

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "hi-progress": "/components/progress/index",
+        "hi-button": "/components/button/index"
+    }
+}

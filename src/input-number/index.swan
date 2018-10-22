@@ -1,0 +1,12 @@
+<view class="u-input-number {{ exClass ? exClass : ''}}">
+    <view class="u-input-number-minus {{ disabled || value <= min ? 'u-input-number-disabled' : ''}}" bind:tap="handleMinus" />
+    <input 
+        type="{{ integer ? 'number' : 'digit'}}" 
+        class="u-input-number-content {{ disabled ? 'u-input-number-content-disabled' : ''}}"
+        value="{{ value }}"
+        disabled="{{ disabled }}"
+        bind:input="handleInput"
+        bind:blur="handleBlur"
+        name="{{ name }}"/>
+    <view class="u-input-number-plus {{ disabled || value >= max ? 'u-input-number-disabled' : ''}}" bind:tap="handlePlus"></view>
+</view>

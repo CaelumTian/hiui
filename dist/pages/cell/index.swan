@@ -1,0 +1,46 @@
+<view class="container">
+    <view class="item">
+        <view class="title">
+            基础 cell 单元格
+        </view>
+        <view class="group">
+            <hi-cell-group border>
+                <hi-cell title="单行" bind:cellClick="aaa"></hi-cell>
+                <hi-cell title="单行" label="带有文字的"></hi-cell>
+                <hi-cell title="带有图标的">
+                    <hi-icon type="help"></hi-icon>
+                </hi-cell>
+                <hi-cell title="文字多的" value="右侧文字" lastcell></hi-cell>
+            </hi-cell-group>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">
+            可以跳转的
+        </view>
+        <view class="group">
+            <hi-cell-group>
+                <hi-cell title="跳转下一页" link url="/pages/switch/index"></hi-cell>
+                <hi-cell title="仅能点击箭头的" link url="/pages/switch/index" onlyTapRight lastcell></hi-cell>
+            </hi-cell-group>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">
+            高级单元格
+        </view>
+        <view class="group">
+            <hi-cell-group>
+                <hi-cell title="开关">
+                    <hi-switch 
+                        slot="right" 
+                        size="20px" 
+                        checked="{{ checked }}"
+                        bindchange="handleChange"></hi-switch>
+                </hi-cell>
+                <hi-cell title="跳转下一页" link value="打开" lastcell></hi-cell>
+                <hi-cell title="自定义样式" ex-class="exbg" ex-title-class="white"></hi-cell>
+            </hi-cell-group>
+        </view>
+    </view>
+</view>

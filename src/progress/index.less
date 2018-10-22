@@ -1,0 +1,58 @@
+@import "../common/styles/mixin.less";
+.u-progress {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+}
+.u-progress-wrap {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    box-sizing: border-box
+}
+.u-progress-show-info .u-progress-wrap {
+    padding-right: 55px;
+    margin-right: -55px;
+}
+.u-progress-content {
+    display: inline-block;
+    width: 100%;
+    background-color: @bg-progress-color;
+    border-radius: 100px;
+    vertical-align: middle
+}
+.u-progress-bg {
+    border-radius: 100px;
+    transition: all .2s linear;
+    position: relative
+}
+.u-progress-primary .u-progress-bg {
+    background-color: @b-primary-color;
+} 
+.u-progress-success .u-progress-bg {
+    background-color: @b-success-color;
+}
+.u-progress-warning .u-progress-bg {
+    background-color: @b-warn-color;
+}
+.u-progress-info {
+    display: inline-block;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 1em;
+    vertical-align: middle
+}
+.u-progress-active .u-progress-bg:before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 10px;
+    animation: i-progress-active 2s ease-in-out infinite
+}

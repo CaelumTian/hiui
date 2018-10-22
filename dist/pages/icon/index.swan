@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="list" s-for="icons">
+        <hi-icon type="{{ item.type }}" size="25px"></hi-icon>
+        <view class="title">{{ item.type }}</view>
+    </view>
+</view>

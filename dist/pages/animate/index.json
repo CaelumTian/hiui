@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "hi-animate": "/components/animate/index",
+        "hi-cell": "/components/cell/index",
+        "hi-cell-group": "/components/cell-group/index"
+    }
+}

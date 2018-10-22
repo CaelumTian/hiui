@@ -1,0 +1,38 @@
+@import "../common/styles/mixin.less";
+.u-badge {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    color: #fff;
+    border: 1rpx solid currentColor;
+}
+.u-badge-default {
+    background: @bg-badge-color;
+}
+.u-badge-mark {
+    padding-right: 7px;
+    border-radius: 0 8px 8px 0
+}
+.u-badge-success {
+    background-color: @b-success-color; 
+}
+.u-badge-success.u-badge-plain {
+    color: @b-success-color;
+}
+.u-badge-primary {
+    background-color: @b-primary-color;
+}
+.u-badge-primary.u-badge-plain {
+    color: @b-primary-color;
+}
+.u-badge-warning {
+    background-color: @b-warn-color;
+}
+.u-badge-warning.u-badge-plain {
+    color: @b-warn-color;
+}
+.u-badge-plain {
+    background: #fff;
+    color: @bg-badge-color;
+}

@@ -1,0 +1,14 @@
+page {
+    padding: 0px 10px;
+    background-color: #fff;
+}
+.title {
+    font-size: 13px;
+    margin: 20px 10px 10px 10px;
+    color:#2b3138;
+}
+.des {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #f96e75;
+}

@@ -1,0 +1,15 @@
+page {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.title {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.group hi-badge {
+    margin-right: 10px;
+}
+.item {
+    margin-bottom: 15px;
+}

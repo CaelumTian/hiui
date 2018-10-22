@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "hi-action-sheet": "/components/action-sheet/index",
+        "hi-button": "/components/button/index",
+        "hi-notify": "/components/notify/index"
+    }
+}

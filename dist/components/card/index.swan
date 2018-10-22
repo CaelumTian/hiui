@@ -1,0 +1,15 @@
+<view class="u-card {{exClass ? exClass : ''}} {{ full ? 'u-card-full' : ''}}">
+    <view class="u-card-header {{ exHeaderClass ? exHeaderClass : ''}}">
+        <view class="u-card-header-content {{ exTitleClass ? exTitleClass : ''}}">
+            <image class="u-card-header-thumb {{ exThumbClass: exThumbClass : ''}}" src="{{ thumb }}" s-if="{{ thumb}}" />
+            {{ title }}
+        </view>
+        <view class="u-card-header-extra" s:if="{{ extra }}">{{ extra }}</view>
+    </view>
+    <view class="u-card-body {{ exBodyClass ? exBodyClass : ''}}">
+        <slot name="content"></slot>
+    </view>
+    <view class="u-card-footer {{ exFooterClass ? exFooterClass : ''}}">
+        <slot name="footer"></slot>
+    </view>
+</view>

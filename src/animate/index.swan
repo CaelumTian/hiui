@@ -1,0 +1,7 @@
+<view 
+    s-if="{{ inited }}"
+    class="u-animate {{ exClass ? exClass : ''}}"
+    style="animation-name: f-{{ name }}-{{ type }}; animation-duration: {{ duration }}ms; {{ display ? '' : 'display: none;'}}"
+    bind:animationend="handleAnimationEnd">
+    <slot></slot>
+</view>

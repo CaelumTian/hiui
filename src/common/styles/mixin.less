@@ -1,0 +1,47 @@
+// 字体颜色
+@f-title-color: #2b3138;
+@f-normal-color: #aaaeb2;
+@f-assist-color: #bcc7cf;
+@f-link-color: #549ef4;
+@f-warn-color: #f96e75;
+@f-notice-color: #f76a24;
+@f-active-color: #AABCCA;
+
+
+// 分割线颜色
+@d-normal-color: #d2d6da;
+@d-func-color: #d6dbe1;
+@d-light-color: #ececec;
+
+
+// 背景颜色
+@bg-noraml-color: #f5f8fc;
+@bg-func-color: #eef1f4;
+@bg-mask-color: rgba(0, 0, 0, .4);
+@bg-as-color: #f7f7f7;   // action-sheet 面板默认颜色
+@bg-badge-color: #c9c9c9;
+@bg-notice-color: #fefcec;
+@bg-progress-color: #f3f3f3;
+
+// 按钮背景色
+@b-primary-color: #549ef4;
+@b-primary-a-color: #4f82bf;
+@b-success-color: #67c26c;
+@b-success-a-color: #529b56;
+@b-warn-color: #f96e75;
+@b-warn-a-color: #c5585f;
+@b-diabled-color: #fafbfc;
+
+
+.f-loading(@width: 12px, @color: #a3a3a3) {
+    display: inline-block;
+    vertical-align: middle;
+    width: @width;
+    height: @width;
+    background: 0 0;
+    border-radius: 50%;
+    border: 1px solid @color;
+    border-color: @color @color @color transparent;
+    animation: btn-spin .6s linear;
+    animation-iteration-count: infinite;
+}

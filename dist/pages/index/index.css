@@ -1,0 +1,11 @@
+.head {
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    font-size: 20px;
+}
+.title {
+    font-size: 13px;
+    margin: 20px 10px 10px 10px;
+    color:#2b3138;
+}

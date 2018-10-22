@@ -1,0 +1,33 @@
+.title {
+    font-size: 13px;
+    color: #666;
+    margin: 10px;
+}
+.item {
+    margin-bottom: 15px;
+}
+.hi-card__circle {
+    border-radius: 50% !important;
+}
+.hi-card__card-title {
+    color: #f96e75;
+    font-size: 17px;
+}
+.hi-card__note-header {
+    padding: 0px !important;
+}
+.hi-card__card-note {
+    width: 100% !important;
+}
+.des {
+    font-size: 12px;
+    color: #aaaeb2;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+}
+.hi-card__sp-card {
+    margin: 0px 35px !important;
+}

@@ -1,0 +1,74 @@
+@import "../common/styles/mixin.less";
+@import "../common/styles/loading.less";
+.f-toast-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: @bg-mask-color;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+}
+.f-toast-mask-show {
+    opacity: 1;
+    visibility: visible;
+}
+.u-as {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: @bg-as-color;
+    transform: translate3d(0, 100%, 0);
+    transform-origin: center;
+    transition: all .2s ease-in-out;
+    z-index: 1100;
+    visibility: hidden;
+}
+.u-as-show {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+.u-as-header {
+    background: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    color: @f-normal-color;
+}
+.u-as-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid @d-light-color;
+}
+.u-as-item {
+    position: relative;
+}
+
+.u-loading-inner {
+    margin-right: 12px;
+    .f-loading();
+}
+.u-as-item-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.u-as-icon {
+    margin-right: 5px;
+}
+.u-as-cancel {
+    margin-top: 6px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "hiui-duapp",
+  "version": "0.0.1",
+  "description": "高质量智能小程序 UI 组件库",
+  "main": "app.js",
+  "scripts": {
+    "build": "gulp --gulpfile ./build/build.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://tianguangyu@icode.baidu.com:8235/baidu/hi/hiui-duapp"
+  },
+  "author": "CaelumTian",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-less": "^4.0.1"
+  }
+}

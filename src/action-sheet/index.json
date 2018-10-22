@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "hi-button": "../button/index",
+    "hi-icon": "../icon/index"
+  } 
+}

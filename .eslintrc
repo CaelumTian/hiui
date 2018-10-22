@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "comma-dangle": ["error", "never"],
+        "no-constant-condition": 2,
+        "no-debugger": 2,
+        "no-dupe-keys": 2,
+        "no-dupe-args": 2,
+        "no-duplicate-case": 2,
+        "use-isnan": 2,
+        "valid-typeof": ["error", {
+            "requireStringLiterals": true
+        }],
+        "curly": ["error", "all"],
+        "no-alert": 1,
+        "no-caller": 2,
+        "guard-for-in": 0,
+        "no-eq-null": 2,
+        "no-eval": 2,
+        "no-with": 2,
+        "no-shadow-restricted-names": 2,
+        "no-undef": 2,
+        "no-inline-comments": 0,
+        "no-var": 0
+    }
+}

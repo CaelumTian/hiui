@@ -1,0 +1,42 @@
+{
+    "debug": false,
+    "pages": [
+        "pages/index/index",
+        "pages/switch/index",
+        "pages/radio/index",
+        "pages/cell/index",
+        "pages/index/index",
+        "pages/button/index",
+        "pages/icon/index",
+        "pages/layout/index",
+        "pages/badge/index",
+        "pages/card/index",
+        "pages/noticebar/index",
+        "pages/tabs/index",
+        "pages/notify/index",
+        "pages/toast/index",
+        "pages/animate/index",
+        "pages/action-sheet/index",
+        "pages/test/index",
+        "pages/dialog/index",
+        "pages/progress/index",
+        "pages/swipeout/index",
+        "pages/color/index",
+        "pages/input-number/index",
+        "pages/drawer/index",
+        "pages/divider/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "HiUI 小程序组件",
+        "navigationBarTextStyle": "black",
+        "backgroundTextStyle": "black",
+        "enablePullDownRefresh": false
+    },
+    "networkTimeout": {
+        "request": 30000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    }
+}

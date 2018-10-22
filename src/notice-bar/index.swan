@@ -1,0 +1,33 @@
+<view 
+    s-if="{{ show }}" 
+    class="u-noticebar {{ exClass ? exClass : ''}} {{ loop ? 'u-noticebar-loop' : 'u-noticebar-fix'}}"
+    style="color: {{ color }}; background-color: {{ backgroundColor }};">
+    <hi-icon 
+        s-if="{{ icon }}" 
+        type="{{ icon }}" 
+        color="{{ color }}" 
+        size="18px" 
+        class="u-noticebar-icon"></hi-icon>
+    <view class="u-noticebar-wrap {{ mode ? 'f-no-margin' : ''}}" id="{{ ids }}">
+        <view class="u-noticebar-content" animation="{{ animationData }}">
+            <slot></slot>
+        </view>
+    </view>
+    <block s-if="{{ mode }}">
+        <hi-icon 
+            bind:tap="handleClose" 
+            class="u-noticebar-right" 
+            s-if="{{ mode === 'closeable'}}" 
+            type="roundclose" 
+            color="{{ color }}"></hi-icon>
+        <navigator 
+            s-if="{{ mode === 'link'}}"
+            url="{{ url }}"
+            open-type="{{ openType }}">
+            <hi-icon 
+                class="u-noticebar-right" 
+                type="right" 
+                color="{{ color }}"></hi-icon>
+        </navigator>
+    </block>
+</view>

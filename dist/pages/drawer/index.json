@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "hi-drawer": "/components/drawer/index",
+        "hi-button": "/components/button/index"
+    }
+}

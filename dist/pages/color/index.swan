@@ -1,0 +1,118 @@
+<view class="container">
+    <view class="list">
+        <view class="title">
+            文字颜色
+        </view>
+        <view class="wrap">
+            <view class="item f1">
+                <view class="title">#2B3138</view>
+                <view class="des">重要文字字色，用于名字、标题等</view>
+            </view>
+            <view class="item f2">
+                <view class="title">#AAAEB2</view>
+                <view class="des">重要文字字色，用于名字、标题等</view>
+            </view>
+            <view class="item f3">
+                <view class="title">#BCC7CF</view>
+                <view class="des">辅助文字字色，用于次要的文字信息</view>
+            </view>
+            <view class="item f4">
+                <view class="title">#549EF4</view>
+                <view class="des">导航栏文字、可点击文字 button</view>
+            </view>
+            <view class="item f5">
+                <view class="title">#549E75</view>
+                <view class="des">导航栏文字、可点击文字 button</view>
+            </view>
+            <view class="item" style="background: #AABCCA;">
+                <view class="title">#AABCCA</view>
+                <view class="des">按钮 active 后文字颜色</view>
+            </view>
+        </view>
+    </view>
+    <view class="list">
+        <view class="title">
+            分割线
+        </view>
+        <view class="wrap">
+            <div class="item f6">
+                <view class="title">#D2D6DA</view>
+                <view class="des">用于颜色较深分割线</view>
+            </div>
+            <div class="item f7">
+                <view class="title">#D6DBE1</view>
+                <view class="des">用于颜色较深分割线</view>
+            </div>
+        </view>
+    </view>
+    <view class="list">
+        <view class="title">
+             背景
+        </view>
+        <view class="wrap">
+            <div class="item f8" style="color: #000;">
+                <view class="title" style="color: #000;">#F5F8FC</view>
+                <view class="des">用于聊天页背景色，个人、群组、讨论组等背景资料页</view>
+            </div>
+            <div class="item f9" style="color: #000;">
+                <view class="title" style="color: #000;">#EEF1F4</view>
+                <view class="des">应用底部tab菜单栏、有底色的cell页面，如设置页面背景色</view>
+            </div>
+        </view>
+    </view>
+    <view class="list">
+        <view class="title">
+            按钮背景色
+        </view>
+        <view class="wrap">
+            <view class="item f4">
+                <view class="title">
+                    #549EF4
+                </view>
+                <view class="des">
+                    基础按钮颜色
+                </view>
+            </view>
+            <view class="item" style="background: #4f82bf;">
+                <view class="title">
+                    #4f82bf
+                </view>
+                <view class="des">
+                    基础按钮 active 后颜色
+                </view>
+            </view>
+            <view class="item" style="background: #67C26C;">
+                <view class="title">
+                    #67C26C
+                </view>
+                <view class="des">
+                    成功按钮颜色
+                </view>
+            </view>
+            <view class="item" style="background: #529b56;">
+                <view class="title">
+                    #529b56
+                </view>
+                <view class="des">
+                    成功按钮 active 后颜色
+                </view>
+            </view>
+            <view class="item" style="background: #F76F77;">
+                <view class="title">
+                    #F76F77
+                </view>
+                <view class="des">
+                    警告按钮颜色
+                </view>
+            </view>
+            <view class="item" style="background: #c5585f;">
+                <view class="title">
+                    #C5585F
+                </view>
+                <view class="des">
+                    警告按钮 active 后颜色
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

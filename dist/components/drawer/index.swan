@@ -1,0 +1,6 @@
+<view class="u-drawer {{ show ? 'u-drawer-show' : ''}} u-drawer-{{ direction }}">
+    <view bind:tap="handleMaskClick" class="f-drawer-mask {{ show ? 'f-drawer-mask-show' : ''}}" s-if="{{ mask }}"></view>
+    <view bind:transitionend="handleAnimationEnd" class="u-drawer-content {{ show ? 'u-drawer-content-show' : ''}}" style="width: {{ width }};">
+        <slot></slot>
+    </view>
+</view>

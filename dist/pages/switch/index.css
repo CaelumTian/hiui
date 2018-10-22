@@ -1,0 +1,21 @@
+page {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.title {
+    font-size: 13px;
+    color: #666;
+}
+.group {
+    margin: 10px 0px 10px 0px;
+}
+.flex-mid {
+    display: flex;
+    justify-content: space-between;
+}
+.group-list button {
+    margin-bottom: 10px;
+}
+.hi-switch__exbg.hi-switch__u-switch-on {
+    background-color: #67c62c;
+}

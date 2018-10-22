@@ -1,0 +1,5 @@
+<view class="container">
+    <hi-radio-group>
+        <hi-radio>按钮测试</hi-radio>
+    </hi-radio-group>
+</view>

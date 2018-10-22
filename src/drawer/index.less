@@ -1,0 +1,42 @@
+@import "../common/styles/mixin.less";
+.u-drawer {
+    visibility: hidden;
+}
+.u-drawer-show {
+    visibility: visible
+}
+.f-drawer-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: @bg-mask-color;
+    transition: all 350ms cubic-bezier(.165,.84,.44,1);
+    opacity: 0;
+}
+.f-drawer-mask-show {
+    opacity: 1;
+}
+.u-drawer-content {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1100;
+    transform: translate3d(-100%, 0, 0);
+    transition: all 350ms cubic-bezier(.165,.84,.44,1);
+    overflow-x: hidden;
+}
+.u-drawer-left .u-drawer-content{
+    left: 0px;
+}
+.u-drawer-right .u-drawer-content{
+    right: 0px;
+}
+.u-drawer-content-show {
+    transform: translate3d(0, 0, 0) !important;
+}
+.u-drawer-right .u-drawer-content{
+    transform: translate3d(100%, 0, 0);
+}

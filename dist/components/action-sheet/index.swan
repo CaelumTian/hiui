@@ -1,0 +1,24 @@
+<view class="f-toast-mask {{ show ? 'f-toast-mask-show' : ''}}" bind:tap="handleClickMask"></view>
+<view class="u-as {{ exClass ? exClass : ''}} {{ show ? 'u-as-show' : ''}}">
+    <view class="u-as-header {{ exHeaderClass ? exHeaderClass : ''}}">
+        <slot name="header"></slot>
+    </view>
+    <view class="u-as-actions">
+        <view class="u-as-item" s-for="{{ actions }}">
+            <hi-button 
+                bind:tap="handleClickItem" 
+                ex-class="u-as-button-item" 
+                type="ghost"
+                size="large"
+                data-index="{{ index }}"
+                open-type="{{ item.openType }}">
+                <view class="u-loading-inner" s-if="{{ item.loading }}"></view>
+                <hi-icon class="u-as-icon" s-if="{{ item.icon }}" type="{{ item.icon }}" size="14px"></hi-icon>
+                <view class="u-as-item-text" style="{{ item.color ? 'color: ' + item.color : '' }}">{{ item.name }}</view>
+            </hi-button>
+        </view>
+    </view>
+    <view class="u-as-cancel" s-if="{{ showCancel }}">
+        <hi-button bind:btnClick="handleClickCancel" ex-class="u-as-button-cancel" type="ghost" size="large">{{ cancelText }}</hi-button>
+    </view>
+</view>

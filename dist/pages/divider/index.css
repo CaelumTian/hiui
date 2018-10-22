@@ -1,0 +1,33 @@
+page {
+    padidng: 10px;
+    background-color: #fff;
+}
+.title {
+    padding: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.hi-divider__margin {
+    margin-bottom: 10px;
+}
+.f-loading-inner {
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: -2px;
+    width: 10px;
+    height: 10px;
+    background: 0 0;
+    border-radius: 50%;
+    border: 1px solid #a3a3a3;
+    border-color: #a3a3a3 #a3a3a3 #a3a3a3 transparent;
+    animation: btn-spin .6s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes btn-spin {
+    0% {
+        transform:rotate(0)
+    }
+    100% {
+        transform:rotate(360deg)
+    }
+}

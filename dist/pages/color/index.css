@@ -1,0 +1,57 @@
+page {
+    padding: 10px;
+    background-color: #fff;
+}
+.title {
+    padding: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wrap .item {
+    box-sizing: border-box;
+    color: #fff;
+    margin-bottom: 15px;
+    width: 45%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.item .title {
+    font-size: 14px;
+    color: #fff; 
+    padding: 0px;
+}
+.item .des {
+    font-size: 11px;
+}
+.f1 {
+    background-color: #2f3138;
+}
+.f2 {
+    background-color: #AAAEB2;
+}
+.f3 {
+    background-color: #BCC7CF;
+}
+.f4 {
+    background-color: #549EF4;
+}
+.f5 {
+    background-color: #F96E75;
+}
+.f6 {
+    background-color: #d2d6da;
+}
+.f7 {
+    background-color: #d6dbe1;
+}
+.f8 {
+    background-color: #f5f8fc;
+}
+.f9 {
+    background-color: #eef1f4;
+}

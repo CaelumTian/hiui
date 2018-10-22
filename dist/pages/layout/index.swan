@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="item">
+        <view class="title">基础用法</view>
+        <hi-row ex-class="wrap">
+            <hi-col ex-class="bg" span="24">
+                <view class="des">span:24</view>
+            </hi-col>
+        </hi-row>
+        <hi-row ex-class="wrap">
+            <hi-col ex-class="bg" span="8">
+                <view class="des">span:8</view>
+            </hi-col>
+            <hi-col ex-class="bg" span="8">
+                <view class="des">span:8</view>
+            </hi-col>
+            <hi-col ex-class="bg" span="8">
+                <view class="des">span:8</view>
+            </hi-col>
+        </hi-row>
+        <hi-row ex-class="wrap">
+            <hi-col ex-class="bg" span="6">
+                <view class="des">span:6</view>
+            </hi-col>
+            <hi-col ex-class="bg" span="14" offset="4">
+                <view class="des">span:12; offset:4;</view>
+            </hi-col>
+        </hi-row>
+        <hi-row ex-class="wrap">
+            <hi-col ex-class="bg" span="12" offset="12">
+                <view class="des">span:12; offset:12;</view>
+            </hi-col>
+        </hi-row>
+    </view>
+</view>

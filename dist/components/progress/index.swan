@@ -1,0 +1,12 @@
+<view class="u-progress u-progress-{{ type }} {{ !hideInfo ? 'u-progress-show-info' : '' }}">
+    <view class="u-progress-wrap">
+        <view class="u-progress-content">
+            <view 
+                class="u-progress-bg" 
+                style="width:{{ percent }}%;height: {{ strokeWidth }}px"></view>
+        </view>
+    </view>
+    <view class="u-progress-info" s-if="{{ !hideInfo }}">
+        <view class="u-progress-text">{{ percent }}%</view>
+    </view>
+</view>

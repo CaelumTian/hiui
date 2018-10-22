@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="item">
+        <view class="title">基础用法</view>
+        <view class="group">
+            <hi-badge>徽章</hi-badge>
+            <hi-badge type="primary">徽章</hi-badge>
+            <hi-badge type="success">徽章</hi-badge>
+            <hi-badge type="warning">徽章</hi-badge>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">圆角徽章</view>
+        <view class="group">
+            <hi-badge mark>徽章</hi-badge>
+            <hi-badge type="primary" mark>徽章</hi-badge>
+            <hi-badge type="success" mark>徽章</hi-badge>
+            <hi-badge type="warning" mark>徽章</hi-badge>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">镂空徽章</view>
+        <view class="group">
+            <hi-badge plain>徽章</hi-badge>
+            <hi-badge type="primary" plain>徽章</hi-badge>
+            <hi-badge type="success" plain>徽章</hi-badge>
+            <hi-badge type="warning" plain>徽章</hi-badge>
+        </view>
+    </view>
+</view>

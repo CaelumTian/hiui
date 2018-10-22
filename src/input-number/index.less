@@ -1,0 +1,83 @@
+@import "../common/styles/mixin.less";
+.u-input-number {
+    display: inline-block;
+    font-size: 0px;
+}
+.u-input-number-minus,
+.u-input-number-content,
+.u-input-number-plus {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff;
+}
+.u-input-number-minus,
+.u-input-number-plus {
+    width: 40px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid @d-func-color;
+    position: relative;
+    padding: 5px;
+}
+.u-input-number-minus::before,
+.u-input-number-plus::before {
+    width: 9px;
+    height: 1px;
+}
+
+.u-input-number-plus::after {
+    width: 1px;
+    height: 9px;
+}
+
+.u-input-number-minus::before,
+.u-input-number-plus::before,
+.u-input-number-plus::after {
+    display: block;
+    content: '';
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6c6c6c;
+}
+.u-input-number-minus:active,
+.u-input-number-plus:active {
+    background-color: #e8e8e8;
+}
+.u-input-number-minus {
+    border-radius: 2px 0 0 2px;
+}
+.u-input-number-plus {
+    border-radius: 0 2px 2px 0;
+}
+.u-input-number-content {
+    width: 33px;
+    height: 26px;
+    padding: 1px;
+    border: 1px solid @d-func-color;
+    border-width: 1px 0;
+    border-radius: 0;
+    box-sizing: content-box;
+    color: @f-title-color;
+    font-size: 14px;
+    text-align: center;
+    -webkit-appearance: none;
+}
+.u-input-number-disabled {
+    background-color: #f8f8f8;
+}
+.u-input-number-disabled:active {
+    background-color: #f8f8f8 !important;
+}
+.u-input-number-disabled::before,
+.u-input-number-disabled::after {
+    background-color: #c9c9c9;
+}
+.u-input-number-content-disabled {
+    color: #c9c9c9;
+    background-color: #f8f8f8;
+}

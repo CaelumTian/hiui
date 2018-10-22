@@ -1,0 +1,3 @@
+<view class="u-row {{ exClass ? exClass : ''}}">
+    <slot></slot>
+</view>

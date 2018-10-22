@@ -1,0 +1,3 @@
+<view class="u-cell-group {{ exClass ? exClass : ''}} {{ border ? 'u-cell-group-border' : ''}}">
+    <slot></slot>
+</view>

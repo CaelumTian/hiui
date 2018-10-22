@@ -1,0 +1,4 @@
+<view class="container">
+    <hi-test name="a">这是第一个组件</hi-test>
+    <hi-test name="b">这是第二个组件，比较长</hi-test>
+</view>

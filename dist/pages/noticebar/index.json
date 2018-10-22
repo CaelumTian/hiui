@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "hi-notice-bar": "/components/notice-bar/index",
+        "hi-icon": "/components/icon/index"
+    }
+}
