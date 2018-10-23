@@ -1,1 +1,1 @@
-*.css javascript 
+dist/components/*.css linguist-vendored=false
