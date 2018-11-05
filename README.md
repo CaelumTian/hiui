@@ -20,7 +20,7 @@
 其他组件的使用方式请参考对应文档。    
 
 ## 组件文档  
-暂时还没有准备好，敬请期待 
+[https://caelumtian.github.io/hiui](https://caelumtian.github.io/hiui) 
 
 
 ## 组件效果预览    

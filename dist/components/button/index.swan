@@ -4,6 +4,7 @@
     bind:tap="handleTap"
     bindgetuserinfo="handleGetuserinfo"
     bindgetphonenumber="handleGetphonenumber"
+    bindopensetting="handleOpenSetting"
     open-type="{{ openType }}"
     hover-start-time="{{ hoverStartTime }}"
     hover-stay-time="{{ hoverStayTime }}"

@@ -10,7 +10,7 @@
             </view>
             <view class="item f2">
                 <view class="title">#AAAEB2</view>
-                <view class="des">重要文字字色，用于名字、标题等</view>
+                <view class="des">普通级别文字字色，用于段落、内容，偏重要展示的信息</view>
             </view>
             <view class="item f3">
                 <view class="title">#BCC7CF</view>

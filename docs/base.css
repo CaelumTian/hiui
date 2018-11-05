@@ -1,0 +1,35 @@
+.markdown-section table {
+    display: table;
+}
+.markdown-section th {
+    text-align: left;
+    white-space: nowrap;
+}
+img {
+    max-width: 375px !important;
+}
+.c-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.c-group .c-item {
+    box-sizing: border-box;
+    width: 32%;
+    padding: 16px;
+    border-radius: 6px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-right: 1.2%;
+}
+.c-group .c-item:nth-child(3n) {
+    margin-right: 0;
+}
+.c-group .c-item .c-title {
+    font-size: 17px;
+}
+.c-group .c-item .c-des {
+    font-size: 13px;
+}
+.markdown-section {
+    max-width: 1200px;
+}
