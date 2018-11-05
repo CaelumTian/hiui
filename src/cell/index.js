@@ -42,10 +42,14 @@ Component({
                 isLink = this.data.link,
                 type = this.data.linkType;
             this.triggerEvent("cellClick", {});
-            if(!isLink || !Boolean(this.data.url)) {
+            if (!isLink || !Boolean(this.data.url)) {
                 return false;
             }
-            swan.navigateTo({
+            if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch'].indexOf(type) === -1) {
+                warn('linkType 属性可选值为 navigateTo，redirectTo，switchTab，reLaunch', type);
+                return;
+            }
+            swan[type]({
                 url: url
             });
         }

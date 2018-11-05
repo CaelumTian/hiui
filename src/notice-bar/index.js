@@ -46,11 +46,9 @@ Component({
             // 将选择器的选取范围更改为自定义组件 component 内
             let self = this;
             swan.createSelectorQuery().select(self._('u-noticebar-wrap')).boundingClientRect(function (wrapRect) {
-                console.log(this);
                 // 这里有bug，返回的永远是最后一个组件的 this，目测原因是回调函数没有 uuid 这种功能（仅保留最后一个）
                 swan.createSelectorQuery().select(self._('u-noticebar-content')).boundingClientRect(function(rect) {
                     let duration = rect.width / 40 * self.data.speed;
-                    console.log(rect);
                     self.setData({
                         wrapWidth: wrapRect.width,
                         width: rect.width,
@@ -98,7 +96,6 @@ Component({
             }
         },
         handleClose() {
-            console.log(11);
             this.destoryTimer();
             this.setData({
                 show: false,

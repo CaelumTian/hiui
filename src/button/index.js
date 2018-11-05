@@ -32,11 +32,14 @@ Component({
             }
             this.triggerEvent('btnClick', {});
         },
-        handleGetuserinfo(detail) {
-            this.triggerEvent('btnGetuserinfo', {});
+        handleGetuserinfo(event = {}) {
+            this.triggerEvent('btnGetuserinfo', event);
         },
-        handleGetphonenumber(event) {
-            this.triggerEvent('btnGetphonenumber', {});
+        handleGetphonenumber(event = {}) {
+            this.triggerEvent('btnGetphonenumber', event);
+        },
+        handleOpenSetting(event = {}) {
+            this.triggerEvent('btnOpenSetting', event)
         }
     }
 });

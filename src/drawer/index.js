@@ -16,14 +16,16 @@ Component({
             type: String,
             value: 'left'
         },
-        visible: {
+        maskClosable: {
             type: Boolean,
-            value: false
+            value: true
         }
     },
     methods: {
         handleMaskClick() {
-            this.triggerEvent("close");
+            if (this.data.maskClosable) {
+                this.triggerEvent("close");
+            }
         }
     }
 });

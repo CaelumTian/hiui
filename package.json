@@ -1,6 +1,6 @@
 {
   "name": "hiui-duapp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "高质量智能小程序 UI 组件库",
   "main": "app.js",
   "scripts": {
