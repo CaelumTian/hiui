@@ -11,7 +11,8 @@
 } 
 ```
 
-## 示例  
+## 示例    
+`cell-group` 组件是承载 cell组件的容器，对于容器中的最后一个 cell，需要设置 `lastcell` 属性(注：1)。
 
 ```html  
 <hi-cell-group border>
@@ -20,16 +21,15 @@
     <hi-cell title="带有图标的">
         <hi-icon type="help"></hi-icon>
     </hi-cell>
-    <hi-cell title="文字多的" value="右侧文字" lastcell></hi-cell>
+    <hi-cell title="文字多的" value="右侧文字"></hi-cell>
     <hi-cell title="跳转下一页" link url="/pages/switch/index"></hi-cell>
-    <hi-cell title="开关">
+    <hi-cell title="开关" lastcell>
         <hi-switch 
             slot="right" 
             size="20px" 
             checked="{{ checked }}"
             bindchange="handleChange"></hi-switch>
     </hi-cell>
-    <hi-cell title="自定义样式" ex-class="exbg" ex-title-class="white"></hi-cell>
 </hi-cell-group>  
 ```
 

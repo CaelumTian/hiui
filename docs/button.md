@@ -10,7 +10,8 @@
 }
 ``` 
 
-## 示例   
+## 示例     
+Button 基础组件, 在智能小程序已有的 `button` 组件上包装而成。
 
 ```html  
 <hi-button>默认按钮</hi-button>

@@ -5,7 +5,7 @@
 ```json    
 {
     "usingComponents": {
-        "hi-noticebar": "/components/noticebar/index"
+        "hi-noticebar": "/components/notice-bar/index"
     }
 } 
 ```    

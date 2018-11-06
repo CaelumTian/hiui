@@ -5,8 +5,7 @@
 ```json    
 {
     "usingComponents": {
-        "hi-card": "/components/card/index",
-        "hi-badge": "/components/badge/index"
+        "hi-card": "/components/card/index"
     }
 } 
 ```

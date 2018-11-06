@@ -1,6 +1,7 @@
 * 开发指南
     * [快速入门](/)
     * [更新日志](/changelog.md) 
+    * [智能小程序问题汇总](/bug.md)
 * 组件
     * 布局
         * [Layout 栅格](layout.md)
@@ -15,13 +16,13 @@
         * [NoticeBar 通告栏](noticebar.md)
         * [Drawer 抽屉菜单](drawer.md)
         * [Swipeout 滑动菜单](swipeout.md)
-        * [Progress 进度条]()
-        * [Aniamte 动画组件]()
+        * [Progress 进度条](progress.md)
+        * [Aniamte 动画组件](animate.md)
     * 操作反馈
-        * [ActionSheet 动作面板]()
-        * [Dialog 弹出框]()
-        * [Notify 消息通知]()
-        * [Toast 提示]()
+        * [ActionSheet 动作面板](actionsheet.md)
+        * [Dialog 弹出框](dialog.md)
+        * [Notify 消息通知](notify.md)
+        * [Toast 提示](toast.md)
     * 表单组件
-        * [Switch 开关]()
-        * [InputNumber 数字输入]()
+        * [Switch 开关](switch.md)
+        * [InputNumber 数字输入](inputnumber.md)

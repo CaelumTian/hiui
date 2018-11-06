@@ -1,4 +1,4 @@
-<view class="f-toast-mask {{ show ? 'f-toast-mask-show' : ''}}" bind:tap="handleClickMask"></view>
+<view class="f-toast-mask {{ show ? 'f-toast-mask-show' : ''}} {{ exMaskClass ? exMaskClass : ''}}" bind:tap="handleClickMask"></view>
 <view class="u-as {{ exClass ? exClass : ''}} {{ show ? 'u-as-show' : ''}}">
     <view class="u-as-header {{ exHeaderClass ? exHeaderClass : ''}}">
         <slot name="header"></slot>

@@ -10,7 +10,9 @@
 } 
 ```  
 
-## 示例  
+## 示例     
+可通过滑动显示操作菜单
+
 ```html  
 普通使用
 <hi-swipeout actions="{{ actions }}" bind:btnClick="btnClick" toggle="{{ toggle }}">
@@ -125,7 +127,7 @@ Page({
 
 | 事件名 | 说明 | 返回值
 | --- | --- | --- |
-| bind:change | 点击菜单项时触发 | 菜单项索引 index |
+| bind:change | 点击菜单项时触发 | 菜单项索引 {index} |
 
 
 ### Swipeout slot  
@@ -133,6 +135,10 @@ Page({
 | 名称 | 说明 |
 | --- | --- |
 | contnet | 内容 |
+
+
+## 演示
+![layout](./images/13.png)
 
 
 
